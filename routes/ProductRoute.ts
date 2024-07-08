@@ -8,8 +8,8 @@ router.get('/products', GetProducts);
 router.get('/product/:id', GetProductById);
 router.get('/product/:Keyword', SearchProduct);
 
-// router.get('/', (req: Request, res: Response, next: NextFunction) => {
-//     res.json({ message:'Hello from user route'})    
-// })
+router.get('/', (req: Request, res: Response, next: NextFunction) => {
+    res.json({ message:'Hello from Backend'})    
+})
 
 export {router as ProductRoute};
